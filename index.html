@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+          
+            background-color: #0e0e0e;
+          
+        }
+        main{
+            display: flex;
+            height: 100vh;
+        }d
+        *{
+            box-sizing: border-box;
+        }
+        /* create three equal columns that floats next to each other */
+        .column{
+            float: left;
+            width: 15%;
+            padding: 10px;
+            height: 300px;
+            margin:auto ;
+            align-items: center;
+        
+        }
+        /* clear float after the column */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .row p{
+            color: antiquewhite;
+            font-size: 16px;
+            font-weight: 400px;
+        }
+        .row h2{
+            color: antiquewhite;
+            
+        }
+        .row .btn{
+            padding: 14px;
+            border-style: inherit;
+        }
+     
+        
+    </style>
+</head>
+<body>
+   <main> 
+       <div class="row">
+           <div class="column" style="background-color: hsl(29, 97%, 45%);">
+            <img src="icon-sedans.svg">
+           <h2>SEDANS</h2>
+           <p>choose a sedan for its affordability and excellent fuel economy. ideal for cruising in the city or on your next Road trip </p>
+           <button class="btn success" style="color:hsl(29, 97%, 45%);">Learn More</button>
+        </div>
+           <div class="column" style="background-color:  hsl(180, 100%, 13%);">
+            <img src="icon-suvs.svg">
+            <h2>SUVS</h2>
+            <p>Take an suv for its spacious interior, power and versatility, perfect for your next family vacation and off road adventures .</p>
+            <button class="btn success" style="color:hsl(184, 100%, 13%) ;">Learn More</button> 
+        </div>
+           <div class="column" style="background-color:  hsl(154, 100%, 9%) ; ">
+            <img src="icon-luxury.svg">
+            <h2>LUXURY</h2>
+           <p>Cruise in the best car brands without the bloated prices.Enjoy the enhanced comfort of a luxury rental and arrive in style </p>
+           <button class="btn success" style="color: hsl(154, 100%, 9%);">Learn More</button>
+        </div>
+           
+       </div>
+   </main>
+</body>
+</html>
